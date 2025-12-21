@@ -20,7 +20,7 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://aroundmarketdocs-strg.ipfs.4everland.app/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -68,7 +68,7 @@ const config = {
       navbar: {
         title: 'Around Market',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'aroundMarket',
           src: 'img/aroundmarket.jpg',
         },
         items: [
@@ -88,7 +88,7 @@ const config = {
             items: [
               {
                 label: 'Docs',
-                to: '/docs/intro',
+                to: '/docs/Intro',
               },
             ],
           },

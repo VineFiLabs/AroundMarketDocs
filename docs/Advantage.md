@@ -36,10 +36,10 @@ We’ve designed a circular economy that rewards every active role in the Around
 | Role | Reward Mechanism | Benefit |
 | :--- | :--- | :--- |
 | **Traders** | **🍀 Lucky Pool** | Reach volume thresholds to win the protocol lottery. |
-| **Creators** | **🎨 Creator Incentives** | Earn **0.5%** of all trading volume on your markets. |
+| **Creators** | **🎨 Creator Incentives** | Earn **0.05%** of all trading volume on your markets. |
 | **Holders** | **💎 ELF NFT Perks** | Enjoy a permanent **50% trading fee discount**. |
 | **Oracles** | **🔮 Data Rewards** | Earn fees for providing accurate, timely outcome data. |
-| **LPs** | **💧 Trading Fees** | Collect **1.5%** of fees for providing market depth. |
+| **LPs** | **💧 Trading Fees** | Collect **0.15%** of fees for providing market depth. |
 
 ---
 
