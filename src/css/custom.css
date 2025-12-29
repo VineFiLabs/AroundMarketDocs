@@ -5,8 +5,10 @@
  */
 
 /* You can override the default Infima variables here. */
-:root {
-  /* Black and white primary palette */
+:root,
+[data-theme='dark'],
+[data-theme='light'] {
+  /* Black and white primary palette - always dark mode */
   --ifm-color-primary: #ffffff;          /* white */
   --ifm-color-primary-dark: #e5e7eb;     /* light gray */
   --ifm-color-primary-darker: #d1d5db;  /* medium gray */
@@ -23,23 +25,63 @@
   --ifm-background-surface-color: #111111;
   --ifm-navbar-background-color: rgba(10, 10, 10, 0.95);
   --ifm-footer-background-color: #0a0a0a;
-}
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --ifm-color-primary: #ffffff;
-  --ifm-color-primary-dark: #e5e7eb;
-  --ifm-color-primary-darker: #d1d5db;
-  --ifm-color-primary-darkest: #9ca3af;
-  --ifm-color-primary-light: #f3f4f6;
-  --ifm-color-primary-lighter: #f9fafb;
-  --ifm-color-primary-lightest: #ffffff;
-  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.15);
+  /* Force white text colors */
+  --ifm-font-color-base: #ffffff;
+  --ifm-heading-color: #ffffff;
+  --ifm-color-content: #ffffff;
+  --ifm-color-content-secondary: rgba(255, 255, 255, 0.8);
+  --ifm-link-color: #ffffff;
+  --ifm-menu-color: #ffffff;
+  --ifm-menu-color-active: #ffffff;
+  --ifm-navbar-link-color: #ffffff;
+  --ifm-footer-link-color: rgba(255, 255, 255, 0.8);
+  --ifm-footer-title-color: #ffffff;
 }
 
 /* 让默认 hero 的纯色背景透明，使用我们自定义的背景 */
 .hero--primary {
   --ifm-hero-background-color: transparent;
-  --ifm-hero-text-color: inherit;
+  --ifm-hero-text-color: #ffffff;
   background: transparent;
+}
+
+/* Force all text to be white */
+body,
+p,
+h1, h2, h3, h4, h5, h6,
+a,
+span,
+div,
+li,
+td,
+th {
+  color: #ffffff !important;
+}
+
+/* Ensure navbar text is white */
+.navbar,
+.navbar__item,
+.navbar__link {
+  color: #ffffff !important;
+}
+
+/* Ensure footer text is white */
+.footer,
+.footer__link-item,
+.footer__title {
+  color: #ffffff !important;
+}
+
+/* Ensure doc content text is white */
+article,
+.markdown,
+.theme-doc-markdown {
+  color: #ffffff !important;
+}
+
+/* Hide theme toggle button */
+button[class*="colorModeToggle"],
+.navbar__item--color-mode {
+  display: none !important;
 }
